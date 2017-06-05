@@ -10,11 +10,11 @@ import org.springframework.web.servlet.ModelAndView;
 @RequestMapping("/sistema")
 public class SistemaController {
 	
-	@RequestMapping(value = "/boasvindas", method = RequestMethod.GET)
-	public ModelAndView boasVindas(@RequestParam(value = "nome", required = false, defaultValue = "José Miguel") String nome) {
+	@RequestMapping(value = "Home/Index", method = RequestMethod.GET)
+	public ModelAndView boasVindas(@RequestParam(value = "nome", required = false, defaultValue = "Josï¿½ Miguel") String nome) {
 
 			ModelAndView modelAndView = new ModelAndView("boasVindas");
-			modelAndView.addObject("mensagem", "Olá " + nome);
+			modelAndView.addObject("mensagem", "Olï¿½ " + nome);
 
 			return modelAndView;
 	}
